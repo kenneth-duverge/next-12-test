@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-import { Button, Stack } from '@chakra-ui/react';
+// @ts-ignore
+import { Button, Stack } from '@vimeo-ux/components';
 
 export default function Home() {
   return (

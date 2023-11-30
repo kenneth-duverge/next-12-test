@@ -1,10 +1,12 @@
 import type { AppProps } from 'next/app';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+// @ts-ignore
+import { ThemeProvider } from '@vimeo-ux/components';
+import { theme } from '@vimeo-ux/theme';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <Component {...pageProps} />
-    </ChakraProvider>
+    </ThemeProvider>
   );
 }
