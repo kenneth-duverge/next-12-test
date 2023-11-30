@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-// import { Button } from '@chakra-ui/react';
+import { Button, Stack } from '@chakra-ui/react';
 
 export default function Home() {
   return (
@@ -12,7 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <button>Click me</button>
+        <Stack gap="2">
+          <Button>Click me</Button>
+          <Button>Click me again</Button>
+        </Stack>
       </main>
     </>
   );
